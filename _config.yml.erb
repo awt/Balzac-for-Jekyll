@@ -1,14 +1,24 @@
-title:            DarkLogs
-tagline:          Anonymous Blogging
+title:            <%= address %>
+tagline:          Blog Anonymously.
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
 url: <%= url %>
+
+# Owner/author information
+owner:
+  name:           <%= address %>
+  avatar:         avatar.png
+  bm:             <%= address %>
+  
 
 # Links to include in top navigation
 # For external links add external: true
 links:
   - title: DarkLogs
-    url: http://www.darklogs.com
+    url: http://www.darklogs.com/
+    external: true
+
+paginate: 10
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
